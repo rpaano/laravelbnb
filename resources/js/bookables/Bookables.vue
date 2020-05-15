@@ -1,9 +1,7 @@
 <template>
     <div>
-        <bookable-list-item/>
-        <bookable-list-item/>
-        <bookable-list-item/>
-        <bookable-list-item/>
+        <bookable-list-item item-title="Cheap Villa" item-content="A very cheap villa" :price="1000"/>
+        <bookable-list-item item-title="Cheap Villa2" item-content="A very cheap villa2" :price="1500"/>
     </div>
 </template>
 

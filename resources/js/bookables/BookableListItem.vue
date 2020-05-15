@@ -1,6 +1,20 @@
 <template>
     <div>
-        <h1>Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, placeat!</p>
+        <h1>{{ itemTitle }}</h1>
+        <p>{{ itemContent }}</p>
     </div>
 </template>
+
+<script>
+    export default {
+        props: {
+            'itemTitle': String,
+            'itemContent': String,
+            'price': Number
+        },
+        mounted() {
+            console.log(this.itemTitle);
+            this.itemTitle = "New title";
+        }
+    }
+</script>
