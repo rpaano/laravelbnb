@@ -14,7 +14,7 @@
         },
         mounted() {
             console.log(this.itemTitle);
-            this.itemTitle = "New title";
+            // this.itemTitle = "New title";
         }
     }
 </script>

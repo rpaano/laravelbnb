@@ -10,6 +10,24 @@
     export default {
         components: {
             BookableListItem
-        }
+        },
+        // beforeCreate() {
+        //     console.log('before create');
+        // },
+        created() {
+            console.log('create');
+        },
+        // beforeMount() {
+        //     console.log('before mount');
+        // },
+        // mounted() {
+        //     console.log('mount');
+        // },
+        // beforeDestroy() {
+        //     console.log('before destroy');
+        // },
+        // destroyed() {
+        //     console.log('destroy');
+        // }
     }
 </script>
