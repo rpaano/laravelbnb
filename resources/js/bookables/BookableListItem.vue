@@ -14,7 +14,9 @@
         },
         mounted() {
             console.log(this.itemTitle);
-            // this.itemTitle = "New title";
+            // setTimeout(() => {
+            //     this.itemTitle = "New title";
+            // }, 15000);
         }
     }
 </script>
