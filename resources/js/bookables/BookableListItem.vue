@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card w-100">
         <div class="card-body">
             <div class="card-title">
                 <h5>{{ itemTitle }}</h5>
