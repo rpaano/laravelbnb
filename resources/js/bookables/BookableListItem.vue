@@ -4,7 +4,7 @@
             <div class="card-title">
                 <h5>{{ itemTitle }}</h5>
                 <div class="card-text">
-                    <p>{{ itemContent }}</p>
+                    <p>{{ itemDescription }}</p>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@
     export default {
         props: {
             'itemTitle': String,
-            'itemContent': String,
+            'itemDescription': String,
             'price': Number
         },
     }
