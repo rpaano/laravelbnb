@@ -1,5 +1,6 @@
 <template>
     <div>
+        Rows is {{ rows }}
         <div v-if="loading">
             Data is loading..
         </div>
@@ -25,12 +26,19 @@
             return {
                 bookables: null,
                 loading: false,
+                columns: 3,
             }
         },
         // beforeCreate() {
         //     console.log('before create');
         // },
-
+        computed: {
+            rows() {
+                return this.bookables == null
+                    ? 0
+                    : Math.ceil(this.bookables.length / this.columns);
+            }
+        },
 
         created() {
             this.loading = true;
@@ -41,7 +49,23 @@
                 },{
                     title: "Cheap Villa 2",
                     content: "A very cheap villa 2",
-                }];
+                },{
+                    title: "Cheap Villa 2",
+                    content: "A very cheap villa 2",
+                },{
+                    title: "Cheap Villa 2",
+                    content: "A very cheap villa 2",
+                },{
+                    title: "Cheap Villa 2",
+                    content: "A very cheap villa 2",
+                },{
+                    title: "Cheap Villa 2",
+                    content: "A very cheap villa 2",
+                },{
+                    title: "Cheap Villa 2",
+                    content: "A very cheap villa 2",
+                }
+                ];
                 this.loading = false;
             }, 2000);
         },

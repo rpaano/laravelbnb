@@ -1,7 +1,14 @@
 <template>
-    <div>
-        <h1>{{ itemTitle }}</h1>
-        <p>{{ itemContent }}</p>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <h5>{{ itemTitle }}</h5>
+                <div class="card-text">
+                    <p>{{ itemContent }}</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </template>
 
@@ -12,11 +19,5 @@
             'itemContent': String,
             'price': Number
         },
-        mounted() {
-            console.log(this.itemTitle);
-            // setTimeout(() => {
-            //     this.itemTitle = "New title";
-            // }, 15000);
-        }
     }
 </script>
